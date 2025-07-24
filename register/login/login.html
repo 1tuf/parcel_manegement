@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login">
+        <h3 id="heading">Login</h3>
+        <form>
+            <label for="userRole">Select Role:</label>
+            <select id="userRole" name="userRole" required>
+            <option value="">-- Select Role --</option>
+            <option value="customer">Customer</option>
+            <option value="officer">Officer</option>
+            </select>
+
+            <label for="Username">Username: </label>
+            <input type="text" id="username"><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"><br>
+
+            <button type="submit" id="login">Login</button>
+
+        </form><br>
+        <a href="../registration/regisjtration.html">New Register</a>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

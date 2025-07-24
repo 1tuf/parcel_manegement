@@ -1,0 +1,126 @@
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.register {
+  display: block;
+  background-color: rgb(230, 226, 226);
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+#heading {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.phone-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.phone-group input {
+  flex: 1;
+}
+
+#countryCode {
+  width: 60px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+button[type="reset"] {
+  background-color: #555454;
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Optional: Success message styling (if used in future)
+.success {
+  height: 100px;
+  width: 300px;
+  display: none;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: green;
+}
+*/
+.phone-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#countryCode {
+  width: 70px; 
+}
+
+#number {
+  flex: 1; 
+}
+
+.registerDone{
+  display: none;
+  background-color: #e0e0e0;       
+  color: #2e7d32;                 
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 300px;
+  margin: 0 auto;                
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.registerDone h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.registerDone p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.registerDone button{
+  background-color:#2e7d32 ;
+}
+
