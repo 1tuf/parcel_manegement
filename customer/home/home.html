@@ -3,17 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            padding: 6px 10px;
+            border-radius: 4px;
+        }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+        select {
+            padding: 6px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="../home/home.html">Home</a>
-        <a href="../bookingService/bookingService.html">Booking Services</a>
-        <a href="../bookingService/bookingService.html">Tracking</a>
-        <a href="../previousBooking/previousBooking.html">Previous Booking</a>
-        <a href="../contactSupport/contactSupport.html">Contact Support</a>
-        <a href="../profile/profile.html">Profile</a>
+        <div class="left">
+            <a href="../home/home.html">Home</a>
+            <a href="../bookingService/bookingService.html">Booking Services</a>
+            <a href="../bookingService/bookingService.html">Tracking</a>
+            <a href="../previousBooking/previousBooking.html">Previous Booking</a>
+            <a href="../contactSupport/contactSupport.html">Contact Support</a>
+        </div>
+        <div class="right">
+            <select id="profile">
+                <option selected disabled hidden>Profile ▾</option>
+                <option value="manage">Manage Profile</option>
+                <option value="logout">Logout</option>
+            </select>
+        </div>
     </nav>
-    <h1>parcel manegement</h1>
+
+    <h1>Parcel Management</h1>
+
+    <!-- <script>
+        function handleProfileOption(select) {
+            const value = select.value;
+            if (value === "manage") {
+                window.location.href = "../profile/profile.html";
+            } else if (value === "logout") {
+                window.location.href = "../logout/logout.html";
+            }
+        }
+    </script> -->
+    <script src="home.js"></script>
 </body>
 </html>

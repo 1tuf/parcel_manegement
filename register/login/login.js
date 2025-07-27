@@ -10,6 +10,8 @@ loginBtn.addEventListener('click',(event)=>{
         if(element.username===username.value){
             if(element.password===password.value){
                 console.log("hello somen singh");
+                //store the data matched in localStorage to diplay the username in profile
+                window.localStorage.setItem("data",JSON.stringify(element));
                 window.location.href="../../customer/home/home.html";
                 return element;
             }
