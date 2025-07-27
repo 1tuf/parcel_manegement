@@ -62,18 +62,6 @@ function storeDataToLocalStorage(name,username,email,countryCode,number,password
 
     localStorage.setItem("allUser", JSON.stringify(existingData));
 
-    // console.log(JSON.parse(localStorage.getItem("allUser")));
-
-
-   
-
-    // let data =window.localStorage.setItem(username,JSON.stringify(userData));
-
-    // let existingData=[];
-    // if(data){
-    //     existingData=JSON.parse(data);
-    // }
-
 }
 
 submitBtn.addEventListener("click",(event)=>{

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parcel Shipping Form</title>
+  <link rel="stylesheet" href="bookingService.css">
+</head>
+<body>
+  <form id="details">
+    <!-- 1. Sender Information (Pre-populated and Readonly) -->
+    <div class="section">
+      <h2>1. Sender Information</h2>
+      <input type="text" value="John Doe" class="readonly" readonly />
+      <input type="text" value="123 Main Street, New York, NY" class="readonly" readonly />
+      <input type="text" value="+1-123-456-7890" class="readonly" readonly />
+    </div>
+
+    <!-- 2. Receiver Information -->
+    <div class="section">
+      <h2>2. Receiver Information</h2>
+      <label for="rname">Name</label>
+      <input type="text" id="rname" name="rname" required placeholder="Enter receiver's name" />
+      <label for="raddress">Address</label>
+      <textarea id="raddress" name="raddress" required placeholder="Enter address"></textarea>
+      <label for="pin">Pin Code</label>
+      <input type="text" id="pin" name="pin" pattern="\d{6}" required placeholder="6-digit pin code" 
+             title="Pin code must be 6 digits" />
+      <label for="rcontact">Contact Number</label>
+      <input type="tel" id="rcontact" name="rcontact" pattern="\d{10}" required 
+             placeholder="10-digit contact number" title="Enter a 10-digit number" />
+    </div>
+
+    <!-- 3. Parcel Details -->
+    <div class="section">
+      <h2>3. Parcel Details</h2>
+      <label for="size">Size and Weight</label>
+      <input type="text" id="size" name="size" required placeholder="e.g. Medium, 2kg" />
+      <label for="content">Contents Description</label>
+      <textarea id="content" name="content" required placeholder="e.g. Books, Electronics"></textarea>
+    </div>
+
+    <!-- 4. Shipping Options -->
+    <div class="section">
+      <h2>4. Shipping Options</h2>
+      <label for="speed">Delivery Speed</label>
+      <select id="speed" name="speed" required>
+        <option value="">Select...</option>
+        <option value="standard">Standard (cost-50)</option>
+        <option value="express">Express (const-100)</option>
+      </select>
+      <label for="packaging">Packaging Preferences</label>
+      <select id="packaging" name="packaging" required>
+        <option value="">Select...</option>
+        <option value="standard">Standard Packaging</option>
+        <option value="custom">Custom Packaging</option>
+        <option value="eco">Eco-friendly Packaging</option>
+        <option value="fragile">Fragile Item Handling</option>
+      </select>
+    </div>
+
+    <!-- 5. Date and Time Selection -->
+    <div class="section">
+      <h2>5. Date and Time Selection</h2>
+      <label for="datetime">Pickup/Drop-off Time</label>
+      <input type="datetime-local" id="datetime" name="datetime" required />
+    </div>
+
+
+    <!-- 7. Additional Services (with checkboxes) -->
+    <div class="section">
+      <h2>7. Additional Services</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="insurance" /> Insurance</label>
+        <label><input type="checkbox" name="tracking" /> Tracking</label>
+      </div>
+    </div>
+
+     <!-- Submit Button -->
+    <button type="submit" class="submit-btn">Go For Payment</button>
+
+  </form>
+  <script src="BookingService.js"></script>
+</body>
+</html>

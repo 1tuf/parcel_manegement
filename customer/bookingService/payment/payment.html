@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <form id="payment-form">
+
+    <div class="section">
+        <h2>Service Cost and Payment</h2>
+        <h3>Total cost to pay: <span id="amount">&#8377;450</span></h3>
+        <label for="payment">Payment Method</label>
+        <select id="payment" name="payment" required>
+        <option value="">Select...</option>
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="upi">UPI</option>
+        <option value="cod">Cash on Delivery</option>
+        </select>
+        
+        <button id="pay-amount">Pay</button>
+    </div>
+    </form>
+    <script src="payment.js"></script>
+</body>
+</html>
